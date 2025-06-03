@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anomaly Detection Alert</title>
+</head>
+<body>
+    <h2>Anomaly Detected</h2>
+    <p><strong>Anomaly Score:</strong> {{ anomaly.anomaly_score }}</p>
+    <p><strong>Detection Time:</strong> {{ anomaly.detection_timestamp }}</p>
+    <p><strong>Log Message:</strong> {{ anomaly.log_entry.message }}</p>
+    <p><strong>Severity:</strong> {{ anomaly.log_entry.severity }}</p>
+    <p><strong>AI Summary:</strong> {{ summary }}</p>
+</body>
+</html>
